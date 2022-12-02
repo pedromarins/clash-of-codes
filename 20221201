@@ -1,0 +1,35 @@
+Lang: JavaScript
+
+Type: shortest
+
+
+Problem: 
+
+
+Take every digit in the given number and decrease it by 1.
+
+If the digit is 0, remove it.
+
+Input
+An integer n
+
+Output
+An integer m
+
+Constraints
+Example
+
+Input
+3210
+
+Output
+210
+
+
+Solution: 
+
+a = ""
+n = parseInt(readline()).toString().split('').forEach( (e) => {if(e>0){a += e-1}})
+console.log(a)
+
+Result: 104 chars
