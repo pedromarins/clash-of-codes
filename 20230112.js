@@ -1,0 +1,70 @@
+Lang: JavaScript
+Type: reverse
+
+Problem: 
+
+Input
+2
+2
+Expected output
+OO
+OO
+
+02 Test 2
+Input
+4
+1
+Expected output
+O
+O
+O
+O
+
+03 Test 3
+Input
+20
+20
+
+Expected output
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOO
+
+04 Test 4
+Input
+1
+1
+Expected output
+O
+
+Solution: 
+
+const height = parseInt(readline());
+const width = parseInt(readline());
+
+let line = '';
+
+for (i=0; i<width; i++) {
+    line = line + 'O'
+}
+
+for (i=0; i<height; i++) {
+    console.log(line);
+}
